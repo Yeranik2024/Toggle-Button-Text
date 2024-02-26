@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message For You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Message For You</h1>
+
+<button id="toggleButton">Hello</button>
+
+
+
+<script>
+    
+    function toggleText() {
+        
+        var toggleButton = document.getElementById("toggleButton");
+
+       
+        if (toggleButton.textContent === "Hello") {
+            toggleButton.textContent = "Goodbye";
+        } else {
+            toggleButton.textContent = "Hello";
+        }
+    }
+
+    var button = document.getElementById("toggleButton");
+
+    button.addEventListener("click", toggleText);
+</script>
+
+</body>
+</html>
